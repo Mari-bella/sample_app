@@ -18,6 +18,11 @@ group :test do
   gem 'spork', '0.9.0.rc8'
 end
 
+group :production do
+ gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+ gem 'pg'
+end
+
 #gem "win32console", "~> 1.3.2"
 
 # Gems used only for assets and not required
