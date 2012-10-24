@@ -9,6 +9,16 @@ gem 'sqlite3', '1.3.6', :group => :development
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+group :development do
+  gem 'rspec-rails', '2.6.1'
+  gem 'annotate', '2.4.0'
+end
+
+group :test do
+  gem 'annotate', '2.4.0'
+end
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -21,10 +31,10 @@ end
 
 gem 'jquery-rails'
 
-group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
-  gem 'pg'
-end
+#group :production do
+  #gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  #gem 'pg'
+#end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
