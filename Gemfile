@@ -16,7 +16,9 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-rails', '2.6.1'
   gem 'annotate', '2.4.0'
+  gem 'spork', '0.9.0.rc8'
 end
 
 group :assets do
